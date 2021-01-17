@@ -177,7 +177,7 @@ export default function ProfilePage4(props) {
       </GridItem>      
       </GridContainer>
         )
-      },
+      }
                    // {
                     //   tabButton: "Partituras",
                     //   // tabIcon: Palette,
