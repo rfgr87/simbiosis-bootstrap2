@@ -5,13 +5,12 @@ import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 const profilePageStyle = {
   container,
   profile: {
-    textAlign: "left",
+    textAlign: "center",
     "& img": {
       maxWidth: "300px",
-      heigth: "100%",
       width: "100%",
       margin: "0 auto",
-      transform: "translate3d(0, -50%, 0)"
+      transform: "translate3d(0, 30%, 0)"
     }
   },
   description: {
@@ -21,13 +20,7 @@ const profilePageStyle = {
     textAlign: "left !important"
   },
   name: {
-    marginTop: "-80px"
-  },
-  ...imagesStyle,
-  main: {
-    background: "white",
-    position: "relative",
-    zIndex: "3"
+    marginTop: "-200px"
   },
   ...imagesStyle,
   main: {
@@ -36,7 +29,7 @@ const profilePageStyle = {
     zIndex: "3"
   },
   mainRaised: {
-    margin: "-3650px 30px 0px",
+    margin: "200px 30px 0px",
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
@@ -45,12 +38,12 @@ const profilePageStyle = {
     ...title,
     display: "inline-block",
     position: "relative",
-    marginTop: "30px",
+    marginTop: "300px",
     minHeight: "32px",
     textDecoration: "none"
   },
   socials: {
-    marginTop: "0",
+    marginTop: "50%",
     width: "100%",
     transform: "none",
     left: "0",

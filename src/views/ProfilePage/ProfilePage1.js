@@ -23,6 +23,7 @@ import image1 from "assets/img/decolonial-fotos/foto-piezaroy1.jpg";
 
 import image2 from "assets/img/decolonial-fotos/foto-decolonial1.jpg";
 import profile from "assets/img/decolonial-fotos/foto-bio.jpg";
+import image3 from "assets/img/decolonial-fotos/foto-piezaroy1.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -53,7 +54,15 @@ export default function ProfilePage1(props) {
 
   const classes2 = useStyles2();
   return (
-    <div>
+    <div style={{ 
+      position: "absolute",
+      backgroundImage: `url(${image3})`,
+      height: "3300px",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: "100%",
+      margin: 0,
+      padding: 0}}>
        <Header
         brand="Decolonial Records"
         rightLinks={<HeaderLinks />}
@@ -65,10 +74,9 @@ export default function ProfilePage1(props) {
         }}
         {...rest}
       />
-      <Parallax2 style = {{height: "20000px", backgroundAttachment: "fixed"}} small image={require("assets/img/decolonial-fotos/foto-piezaroy1.jpg")} />
+        <div>  {/* <div style = {{border: "black", borderWidth: "3px", borderStyle: "outset",backgroundColor: "white", width: "75%", marginLeft: "12.5%", marginTop: "15%"}}> */}
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
-          <div className={classes.container} style = {{paddingBottom: "80px"}}>
             <GridContainer justify="left" >
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
@@ -98,13 +106,13 @@ export default function ProfilePage1(props) {
               {"Creó la Poesía Concreta Multi Semiótica donde se explora el multi semiotismo sincrónico y asincrónico y la Meta Poesía Integral donde se explora el color semiótico como una integral de un multisemiotismo de una gestalt universal popular. También investiga y crea deducciones y creaciones sobre la metafísica de la espiritualidad ancestral latinoamericana y su potencial desarrollo axiomático y abstracto para la creación de nuevos constructos y filosofías que tienen el potencial de alterar la realidad perceptual."}
               {" "}
               </p>
+              </div>
+            
             </div>
             
           </div>
-          
         </div>
-      </div>
-      <div>
+        <div>
       <GridContainer justify="center">
               <GridItem  className={classes.navWrapper}>
                 <NavPills

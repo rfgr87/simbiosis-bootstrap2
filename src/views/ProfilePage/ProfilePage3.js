@@ -19,7 +19,7 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax3 from "components/Parallax/Parallax3.js";
 
-import image1 from "assets/img/decolonial-fotos/foto-piezaroy1.jpg";
+import image1 from "assets/img/decolonial-fotos/foto-diego1.png";
 
 import image2 from "assets/img/decolonial-fotos/foto-decolonial1.jpg";
 import profile from "assets/img/decolonial-fotos/foto-diego31.png";
@@ -52,7 +52,15 @@ export default function ProfilePage3(props) {
 
   const classes2 = useStyles2();
   return (
-    <div>
+    <div style={{ 
+      position: "absolute",
+      backgroundImage: `url(${image1})`,
+      height: "2200px",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: "100%",
+      margin: 0,
+      padding: 0}}>
        <Header
         brand="Decolonial Records"
         rightLinks={<HeaderLinks />}
@@ -64,7 +72,7 @@ export default function ProfilePage3(props) {
         }}
         {...rest}
       />
-   <Parallax3  style = {{height: "20000px", backgroundAttachment: "fixed"}} small small image={require("assets/img/decolonial-fotos/foto-diego1.png")} />
+        <div>  {/* <div style = {{border: "black", borderWidth: "3px", borderStyle: "outset",backgroundColor: "white", width: "75%", marginLeft: "12.5%", marginTop: "15%"}}> */}
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container} style = {{paddingBottom: "80px"}}>
@@ -92,12 +100,10 @@ export default function ProfilePage3(props) {
             <div className={classes.description}>
               <p>{"Diego Villaseñor (Videco) es compositor, improvisador, multi-instrumentista, filósofo y programador, cuya práctica e investigación se desarrolla en torno a los siguientes temas: creación colectiva, composición modular e inspirada en sistemas naturales (particularmente ecosistemas), ecoacústica, comprovisación, desarrollo de técnicas extendidas, politemporalidad, microtonalidad, síntesis sonora mediante instrumentos acústicos, ontología del proceso creativo-musical."}<br></br><br></br>
               </p>
+              </div>   
             </div>
-            
-          </div>
-          
+            </div>
         </div>
-      </div>
       <div>
       <GridContainer justify="center">
               <GridItem  className={classes.navWrapper}>
@@ -222,6 +228,7 @@ export default function ProfilePage3(props) {
                 />
               </GridItem>
             </GridContainer>
+            </div>
             </div>
     </div>
   );

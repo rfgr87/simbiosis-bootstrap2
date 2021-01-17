@@ -54,7 +54,15 @@ export default function ProfilePage4(props) {
 
   const classes2 = useStyles2();
   return (
-    <div>
+    <div style={{ 
+      position: "absolute",
+      backgroundImage: `url(${image1})`,
+      height: "2200px",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: "100%",
+      margin: 0,
+      padding: 0}}>
        <Header
         brand="Decolonial Records"
         rightLinks={<HeaderLinks />}
@@ -66,9 +74,10 @@ export default function ProfilePage4(props) {
         }}
         {...rest}
       />
-   <Parallax2  style = {{height: "20000px", backgroundAttachment: "fixed"}} small small image={require("assets/img/decolonial-fotos/foto-pedro2.jpg")} />
+        <div>  {/* <div style = {{border: "black", borderWidth: "3px", borderStyle: "outset",backgroundColor: "white", width: "75%", marginLeft: "12.5%", marginTop: "15%"}}> */}
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
+   
           <div className={classes.container} style = {{paddingBottom: "80px"}}>
             <GridContainer justify="left" >
               <GridItem xs={12} sm={12} md={6}>
@@ -255,6 +264,7 @@ export default function ProfilePage4(props) {
                 />
               </GridItem>
             </GridContainer>
+          </div>
           </div>
     </div>
   );
