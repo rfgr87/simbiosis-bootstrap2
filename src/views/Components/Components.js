@@ -43,7 +43,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Decolonial Records"
+        brand="CMEPR"
         rightLinks={<HeaderLinks />}
         fixed
         color="black"
@@ -53,12 +53,13 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax className = {{classes2}} image={require("assets/img/decolonial-fotos/foto-decolonial1.jpg")}>
+      <Parallax className = {{classes2}} image={require("assets/img/decolonial-fotos/foto-pieza-grafica1.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Decolonial Records</h1>
+                <h1 className={classes.title}>CMEPR</h1>
+                <h2 style = {{fontSize: "45px"}}>[Colectivo de Música Experimental de Puerto Rico]</h2>
                 {/* <h3 className={classes.subtitle}>
                   A Badass Material-UI Kit based on Material Design.
                 </h3> */}

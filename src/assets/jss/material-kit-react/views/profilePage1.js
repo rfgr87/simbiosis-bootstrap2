@@ -7,7 +7,7 @@ const profilePageStyle = {
   profile: {
     textAlign: "center",
     "& img": {
-      maxWidth: "300px",
+      maxWidth: "250px",
       width: "100%",
       margin: "0 auto",
       transform: "translate3d(0, 30%, 0)"
@@ -15,12 +15,12 @@ const profilePageStyle = {
   },
   description: {
     margin: "1.071rem auto 0",
-    maxWidth: "600px",
+    maxWidth: "500px",
     color: "black",
     textAlign: "left !important"
   },
   name: {
-    marginTop: "-200px"
+    marginTop: "-150px"
   },
   ...imagesStyle,
   main: {
@@ -29,7 +29,7 @@ const profilePageStyle = {
     zIndex: "3"
   },
   mainRaised: {
-    margin: "200px 30px 0px",
+    margin: "400px 100px 0px",
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"

@@ -33,8 +33,8 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Link to="/manifesto" className={classes.navLink}>
-              Manifesto
+      <Link to="/Nosotros" className={classes.navLink}>
+              Nosotros
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -49,31 +49,15 @@ export default function HeaderLinks(props) {
           dropdownList={[
           <Link to={"/royfguzman"} className={classes.dropdownLink}>
               Roy F Guzmán
-          </Link>,
-           
-          <Link to={"/renzofilinich"} className={classes.dropdownLink}>
-            Renzo Filinich
-          </Link>,
-          <Link to={"/diegovillasenordecortina"} className={classes.dropdownLink}>
-            Diego Villaseñor de Cortina
-          </Link>,
-          <Link to="/felipecorredortrellez" className={classes.dropdownLink}>
-            Felipe Corredor Tréllez
-          </Link>,
-          <Link to="/danielfloresdias" className={classes.dropdownLink}>
-            Daniel Flores Dias
-          </Link>,
-          <Link to="/pedrofrancofraticelli" className={classes.dropdownLink}>
-            Pedro Emanuel Franco Fraticelli
           </Link>
           ]}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
       <Link to="/releases" className={classes.navLink}>
               Releases
         </Link>
-      </ListItem>
+      </ListItem> */}
       
       <ListItem className={classes.listItem}>
         {/*<Tooltip title="Delete">

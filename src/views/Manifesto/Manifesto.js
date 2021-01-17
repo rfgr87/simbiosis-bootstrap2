@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from "assets/img/decolonial-fotos/foto-decolonial222.png";
+import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 import MainFeaturedPost from "views/Manifesto/MainFeaturedPost.js";
 
 

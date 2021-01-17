@@ -19,22 +19,32 @@ import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
 import Parallax2 from "components/Parallax/Parallax2.js";
 
-import image1 from "assets/img/decolonial-fotos/foto-piezaroy1.jpg";
+import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 
-import image2 from "assets/img/decolonial-fotos/foto-decolonial1.jpg";
-import profile from "assets/img/decolonial-fotos/foto-bio.jpg";
-import image3 from "assets/img/decolonial-fotos/foto-piezaroy1.jpg";
+import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
+import profile from "assets/img/decolonial-fotos/foto-roy1.png";
+import image3 from "assets/img/decolonial-fotos/foto-roy-aurora2.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
 import studio3 from "assets/img/examples/studio-3.jpg";
 import studio4 from "assets/img/examples/studio-4.jpg";
 import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
+import work1 from "assets/img/decolonial-fotos/foto-roy-escardillo.png";
+import work2 from "assets/img/decolonial-fotos/foto-roy-metamusica1.jpg";
+import work3 from "assets/img/decolonial-fotos/foto-roy-metamusica2.jpg";
+import work4 from "assets/img/decolonial-fotos/foto-roy-numeritos.png";
+import work5 from "assets/img/decolonial-fotos/foto-roy-garabato1.png";
+// import work6 from "assets/img/decolonial-fotos/foto-roy-triangulo.jpg";
+import work6 from "assets/img/decolonial-fotos/foto-roy-fractalidad-criolla.png";
+import work7 from "assets/img/decolonial-fotos/foto-roy-kreppy.jpg";
+import work8 from "assets/img/decolonial-fotos/foto-roy-pacto-blanco-criollo.png";
+// import work10 from "assets/img/decolonial-fotos/foto-roy-triangulo.jpg";
+import work9 from "assets/img/decolonial-fotos/foto-roy-analogias-anatopicas.jpg";
+import work10 from "assets/img/decolonial-fotos/foto-roy-primitives.png";
+import work11 from "assets/img/decolonial-fotos/foto-roy-pacto-blanco-criollo.png";
+import work12 from "assets/img/decolonial-fotos/foto-roy-abecedario.png";
+import work13 from "assets/img/decolonial-fotos/foto-roy-numeritosorquesta.jpg";
 
 import styles1 from "assets/jss/material-kit-react/views/profilePage1.js";
 // import styles2 from "assets/jss/material-kit-react/views/profilePage1.js";
@@ -57,14 +67,16 @@ export default function ProfilePage1(props) {
     <div style={{ 
       position: "absolute",
       backgroundImage: `url(${image3})`,
-      height: "3300px",
+      height: "1900px",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       width: "100%",
+      padddingRigth: "45px",
+      paddingBottom: "200px",
       margin: 0,
       padding: 0}}>
        <Header
-        brand="Decolonial Records"
+        brand="CMEPR"
         rightLinks={<HeaderLinks />}
         fixed
         color="black"
@@ -112,7 +124,20 @@ export default function ProfilePage1(props) {
             
           </div>
         </div>
-        <div>
+        <div style={{ 
+          position: "absolute",
+          backgroundImage: `url(${image1})`,
+          height: "3000px",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          width: "100%",
+          padddingRigth: "45px",
+          paddingBottom: "200px",
+          margin: 0,
+          padding: 0}}>
+    
+    
+
       <GridContainer justify="center">
               <GridItem  className={classes.navWrapper}>
                 <NavPills
@@ -250,80 +275,137 @@ export default function ProfilePage1(props) {
       </GridItem>      
       </GridContainer>
         )
-      }
-                    // {
-                    //   tabButton: "Partituras",
-                    //   // tabIcon: Palette,
-                    //   tabContent: (
-                    //     <GridContainer justify="center">
-                    //       <GridItem xs={12} sm={12} md={4}>
-                    //         <img
-                    //           alt="..."
-                    //           src={work1}
-                    //           className={navImageClasses}
-                    //         />
-                    //         <img
-                    //           alt="..."
-                    //           src={work2}
-                    //           className={navImageClasses}
-                    //         />
-                    //         <img
-                    //           alt="..."
-                    //           src={work3}
-                    //           className={navImageClasses}
-                    //         />
-                    //       </GridItem>
-                    //       <GridItem xs={12} sm={12} md={4}>
-                    //         <img
-                    //           alt="..."
-                    //           src={work4}
-                    //           className={navImageClasses}
-                    //         />
-                    //         <img
-                    //           alt="..."
-                    //           src={work5}
-                    //           className={navImageClasses}
-                    //         />
-                    //       </GridItem>
-                    //     </GridContainer>
-                    //   )
-                    // },
-                    // {
-                    //   tabButton: "Textos",
-                    //   tabContent: (
-                    //     <GridContainer justify="center">
-                    //       <GridItem xs={12} sm={12} md={4}>
-                    //         <img
-                    //           alt="..."
-                    //           src={work4}
-                    //           className={navImageClasses}
-                    //         />
-                    //         <img
-                    //           alt="..."
-                    //           src={studio3}
-                    //           className={navImageClasses}
-                    //         />
-                    //       </GridItem>
-                    //       <GridItem xs={12} sm={12} md={4}>
-                    //         <img
-                    //           alt="..."
-                    //           src={work2}
-                    //           className={navImageClasses}
-                    //         />
-                    //         <img
-                    //           alt="..."
-                    //           src={work1}
-                    //           className={navImageClasses}
-                    //         />
-                    //         <img
-                    //           alt="..."
-                    //           src={studio1}
-                    //           className={navImageClasses}
-                    //         />
-                    //       </GridItem>
-                    //     </GridContainer>
-                    //   )
-                    // }
+      },
+                    {
+                      tabButton: "Partituras",
+                      // tabIcon: Palette,
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={12} sm={12} md={4}>
+                            <img
+                              alt="..."
+                              src={work1}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={work2}
+                              className={navImageClasses}
+                            />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+                            <img
+                              alt="..."
+                              src={work3}
+                              className={navImageClasses}
+                            />
+                         
+                            <img
+                              alt="..."
+                              src={work4}
+                              className={navImageClasses}
+                            />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+
+                            <img
+                              alt="..."
+                              src={work5}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={work6}
+                              className={navImageClasses}
+                            />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+
+                            <img
+                              alt="..."
+                              src={work7}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={work8}
+                              className={navImageClasses}
+                            />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+
+
+                            <img
+                              alt="..."
+                              src={work9}
+                              className={navImageClasses}
+                            />
+                         
+                            <img
+                              alt="..."
+                              src={work10}
+                              className={navImageClasses}
+                            />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+
+
+                            <img
+                              alt="..."
+                              src={work11}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={work12}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={work13}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                         
+                        </GridContainer>
+                      )
+                    },
+                    {
+                      tabButton: "Textos",
+                      tabContent: (
+                        <GridContainer justify="center">
+                          <GridItem xs={12} sm={12} md={4}>
+                            <img
+                              alt="..."
+                              src={work4}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={studio3}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                          <GridItem xs={12} sm={12} md={4}>
+                            <img
+                              alt="..."
+                              src={work2}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={work1}
+                              className={navImageClasses}
+                            />
+                            <img
+                              alt="..."
+                              src={studio1}
+                              className={navImageClasses}
+                            />
+                          </GridItem>
+                        </GridContainer>
+                      )
+                    }
                   ]}
                 />
               </GridItem>

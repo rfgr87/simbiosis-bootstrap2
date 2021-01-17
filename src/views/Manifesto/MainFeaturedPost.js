@@ -11,9 +11,9 @@ import classNames from "classnames";
 
 
 
-import image2 from "assets/img/decolonial-fotos/foto-decolonial222.png";
-import image1 from "assets/img/decolonial-fotos/foto-decolonial1.jpg";
-import image3 from "assets/img/decolonial-fotos/foto-loiza.png";
+import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
+import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy2.jpg";
+import image3 from "assets/img/decolonial-fotos/foto-roy-pieza-roy3.jpg";
 
 import styles1 from "assets/jss/material-kit-react/views/profilePage1.js";
 // import styles2 from "assets/jss/material-kit-react/views/profilePage1.js";
@@ -43,7 +43,7 @@ function MainFeaturedPost(props) {
         margin: 0,
         padding: 0}}>
         <Header
-        brand="Decolonial Records"
+        brand="CMEPR"
         rightLinks={<HeaderLinks />}
         fixed
         color="black"
