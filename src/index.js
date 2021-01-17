@@ -27,7 +27,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
        <Route path="/releases" component={Releases} />
-      <Route path="/manifesto" component={Manifesto} />
+      <Route path="/nosotros" component={Manifesto} />
       <Route path='/pedrofrancofraticelli' component = {ProfilePage6}/>
       <Route path='/diegovillasenordecortina' component={ProfilePage3}/>
       <Route path='/renzofilinich' component={ProfilePage2}/>

@@ -11,9 +11,9 @@ import classNames from "classnames";
 
 
 
-import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
-import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy2.jpg";
-import image3 from "assets/img/decolonial-fotos/foto-roy-pieza-roy3.jpg";
+import image2 from "assets/img/decolonial-fotos/foto-royfunciones.jpg";
+// import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy2.jpg";
+// import image3 from "assets/img/decolonial-fotos/foto-roy-pieza-roy3.jpg";
 
 import styles1 from "assets/jss/material-kit-react/views/profilePage1.js";
 // import styles2 from "assets/jss/material-kit-react/views/profilePage1.js";
@@ -36,10 +36,12 @@ function MainFeaturedPost(props) {
     <div style={{ 
         position: "absolute",
         backgroundImage: `url(${image2})`,
-        height: "2000px",
+        height: "1000px",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: "100%",
+        marginBottom: "-500px",
+        paddingBottom: "-500px",
         margin: 0,
         padding: 0}}>
         <Header
@@ -56,6 +58,8 @@ function MainFeaturedPost(props) {
 
     <div >
     <h1 style = {{
+      marginLeft: "20px",
+      display: "block",
       position: "relative",
       color: "black", 
       fontFamily: "Menlo", //"'Raleway', sans-serif",
@@ -71,42 +75,11 @@ function MainFeaturedPost(props) {
       justifyText: "left",
       opacity: "1.0",
       marginTop: "100px"
-       }}>Manifesto</h1>
-
-       <h5 style={{
-        display: "inline-block",
-      color:"black", 
-      fontFamily: "Menlo",
-      fontSize: "40px",
-      fontWeight: "normal",
-      fontStyle: "normal",
-      paddingTop: "1%",
-      paddingLeft: "1%",
-      position: "relative",
-      backgroundColor: "white", //"#000000",
-      opacity: "1.0",   
-      marginLeft: "12%",
-      marginTop: "9%",
-      width: "80%",
-      height: "80%",
-      }}> 
-       {"[Decolonialidad, Apropiación, Futurismo]"}<br></br></h5>
-
+       }}>Nosotros</h1>
+</div>
+      <div>
       <h5 style={{
-      color: "black",   
-      fontStyle: "normal",
-      position: "relative",
-      backgroundColor: "black",
-      opacity: "1.0",
-      marginLeft: "0%",
-      marginTop: "0%",
-      backgroundImage: `url(${image1})`,
-      width: "100%",
-      height: "5%"
-       }}> 
-     <br></br></h5>
-      <h5 style={{
-      display: "inlinde-block",
+      display: "block",
       color: "black", 
       fontFamily: "Menlo",
       fontSize: "15px",
@@ -121,116 +94,11 @@ function MainFeaturedPost(props) {
       marginLeft: "1%",
       width: "80%"
        }}> 
-       {"Decolonial Records está dedicado a la música contemporánea y experimental Latino Americana con la misión de formar mediante actos decoloniales una identidad futurística Latino Americana abrazando el folclor y buscando el desprendimiento de asociaciones convenidas por el condicionamiento occidental."}<br></br>
+       {"CMEPR es el Colectivo de Música Experimental de Puerto Rico. Es un grupo de músicos y compositores de Puerto Rico organizados con la idea de crear, interpretar e improvisar música experimental y eventos de música experimental en Puerto Rico."}<br></br>
        </h5>
     </div>
 
-  <h5 style={{
-      color: "black", 
-      fontFamily: "'Raleway', sans-serif",
-      fontSize: "5px",
-      fontWeight: "bold",
-      fontStyle: "normal",
-      paddingTop: "10px",
-      bottomMargin: "200px",
-      padding: "10px",
-      position: "absolute",
-      backgroundColor: "black",
-      opacity: "1.0",
-      marginLeft: "5%",
-      marginTop: "7%",
-      backgroundImage: `url(${image1})`,
-      width: "2.5%"
-       }}><br></br></h5>
-       <h5 style={{
-      color: "black", 
-      fontFamily: "'Raleway', sans-serif",
-      fontSize: "5px",
-      fontWeight: "bold",
-      fontStyle: "normal",
-      paddingTop: "10px",
-      bottomMargin: "200px",
-      padding: "10px",
-      position: "absolute",
-      backgroundColor: "black",
-      opacity: "1.0",
-      marginLeft: "21%",
-      marginTop: "7%",
-      backgroundImage: `url(${image1})`,
-      width: "15%"
-       }}><br></br></h5>
-
-<h5 style={{
-      color: "black", 
-      fontFamily: "'Raleway', sans-serif",
-      fontSize: "5px",
-      fontWeight: "bold",
-      fontStyle: "normal",
-      paddingTop: "10px",
-      bottomMargin: "200px",
-      padding: "10px",
-      position: "absolute",
-      backgroundColor: "black",
-      opacity: "1.0",
-      marginLeft: "50%",
-      marginTop: "7%",
-      backgroundImage: `url(${image1})`,
-      width: "5%"
-       }}><br></br></h5>
-
-<h5 style={{
-      color: "black", 
-      fontFamily: "'Raleway', sans-serif",
-      fontSize: "5px",
-      fontWeight: "bold",
-      fontStyle: "normal",
-      paddingTop: "10px",
-      bottomMargin: "200px",
-      padding: "10px",
-      position: "absolute",
-      backgroundColor: "black",
-      opacity: "1.0",
-      marginLeft: "75%",
-      marginTop: "7%",
-      backgroundImage: `url(${image1})`,
-      width: "2%"
-       }}><br></br></h5>
-
-<h5 style={{
-      color: "black", 
-      fontFamily: "'Raleway', sans-serif",
-      fontSize: "5px",
-      fontWeight: "bold",
-      fontStyle: "normal",
-      paddingTop: "10px",
-      bottomMargin: "200px",
-      padding: "10px",
-      position: "absolute",
-      backgroundColor: "black",
-      opacity: "1.0",
-      marginLeft: "65%",
-      marginTop: "7%",
-      backgroundImage: `url(${image1})`,
-      width: "1%"
-       }}><br></br></h5>
-
-    <h5 style={{
-      color: "black", 
-      fontFamily: "'Raleway', sans-serif",
-      fontSize: "5px",
-      fontWeight: "bold",
-      fontStyle: "normal",
-      paddingTop: "10px",
-      bottomMargin: "200px",
-      padding: "10px",
-      position: "absolute",
-      backgroundColor: "black",
-      opacity: "1.0",
-      marginLeft: "85%",
-      marginTop: "7%",
-      backgroundImage: `url(${image1})`,
-      width: "5%"
-       }}><br></br></h5>
+  
     </div>
     )
   }

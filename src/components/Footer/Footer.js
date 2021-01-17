@@ -33,11 +33,11 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://decolonialrecords.bandcamp.com/"
+                href="https://cmepr.bandcamp.com/"
                 className={classes.block}
                 target="_blank"
               >
-                Decolonial Records Bandcamp
+                CMEPR Bandcamp
               </a>
             </ListItem>
           </List>

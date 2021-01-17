@@ -42,7 +42,7 @@ import work8 from "assets/img/decolonial-fotos/foto-roy-pacto-blanco-criollo.png
 // import work10 from "assets/img/decolonial-fotos/foto-roy-triangulo.jpg";
 import work9 from "assets/img/decolonial-fotos/foto-roy-analogias-anatopicas.jpg";
 import work10 from "assets/img/decolonial-fotos/foto-roy-primitives.png";
-import work11 from "assets/img/decolonial-fotos/foto-roy-pacto-blanco-criollo.png";
+// import work11 from "assets/img/decolonial-fotos/foto-roy-pacto-blanco-criollo.png";
 import work12 from "assets/img/decolonial-fotos/foto-roy-abecedario.png";
 import work13 from "assets/img/decolonial-fotos/foto-roy-numeritosorquesta.jpg";
 
@@ -350,11 +350,7 @@ export default function ProfilePage1(props) {
                             <GridItem xs={12} sm={12} md={4}>
 
 
-                            <img
-                              alt="..."
-                              src={work11}
-                              className={navImageClasses}
-                            />
+                            
                             <img
                               alt="..."
                               src={work12}
