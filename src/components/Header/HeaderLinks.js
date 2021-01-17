@@ -28,6 +28,11 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
+      <Link to="/" className={classes.navLink}>
+              Home
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
       <Link to="/manifesto" className={classes.navLink}>
               Manifesto
         </Link>
@@ -65,7 +70,7 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-      <Link to="/release" className={classes.navLink}>
+      <Link to="/releases" className={classes.navLink}>
               Releases
         </Link>
       </ListItem>

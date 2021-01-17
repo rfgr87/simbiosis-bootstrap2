@@ -41,7 +41,7 @@ import styles2 from "assets/jss/material-kit-react/components/parallaxStyle3.js"
 const useStyles = makeStyles(styles);
 const useStyles2 = makeStyles(styles2);
 
-export default function ProfilePage2(props) {
+export default function ProfilePage3(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(
