@@ -57,7 +57,7 @@ export default function ProfilePage4(props) {
     <div style={{ 
       position: "absolute",
       backgroundImage: `url(${image1})`,
-      height: "2200px",
+      height: "2500px",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       width: "100%",
