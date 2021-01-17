@@ -3,6 +3,8 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
+
 // @material-ui/icons
 import Camera from "@material-ui/icons/Camera";
 import Palette from "@material-ui/icons/Palette";
@@ -15,9 +17,12 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Parallax3 from "components/Parallax/Parallax3.js";
 
-import profile from "assets/img/faces/christian.jpg";
+import image1 from "assets/img/decolonial-fotos/foto-piezaroy1.jpg";
+
+import image2 from "assets/img/decolonial-fotos/foto-decolonial1.jpg";
+import profile from "assets/img/decolonial-fotos/foto-diego31.png";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -31,44 +36,46 @@ import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
 import styles from "assets/jss/material-kit-react/views/profilePage3.js";
+import styles2 from "assets/jss/material-kit-react/components/parallaxStyle3.js";
 
 const useStyles = makeStyles(styles);
+const useStyles2 = makeStyles(styles2);
 
-export default function ProfilePage3(props) {
+export default function ProfilePage2(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(
     classes.imgRaised,
-    classes.imgRoundedCircle,
     classes.imgFluid
   );
-  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+  const navImageClasses = classNames(classes.imgGallery);
+
+  const classes2 = useStyles2();
   return (
     <div>
-      <Header
-        color="transparent"
-        brand="Material Kit React"
+       <Header
+        brand="Decolonial Records"
         rightLinks={<HeaderLinks />}
         fixed
+        color="black"
         changeColorOnScroll={{
-          height: 200,
-          color: "white"
+          height: 400,
+          color: "black"
         }}
         {...rest}
       />
-      <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
+   <Parallax3  style = {{height: "20000px", backgroundAttachment: "fixed"}} small small image={require("assets/img/decolonial-fotos/foto-diego1.png")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
-          <div className={classes.container}>
-            <GridContainer justify="center">
+          <div className={classes.container} style = {{paddingBottom: "80px"}}>
+            <GridContainer justify="left" >
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div>
                     <img src={profile} alt="..." className={imageClasses} />
                   </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
+                    <h3 className={classes.title}>Diego Villaseñor de Cortina</h3><br></br>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -83,54 +90,64 @@ export default function ProfilePage3(props) {
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
+              <p>{"Diego Villaseñor (Videco) es compositor, improvisador, multi-instrumentista, filósofo y programador, cuya práctica e investigación se desarrolla en torno a los siguientes temas: creación colectiva, composición modular e inspirada en sistemas naturales (particularmente ecosistemas), ecoacústica, comprovisación, desarrollo de técnicas extendidas, politemporalidad, microtonalidad, síntesis sonora mediante instrumentos acústicos, ontología del proceso creativo-musical."}<br></br><br></br>
               </p>
             </div>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div>
+      <GridContainer justify="center">
+              <GridItem  className={classes.navWrapper}>
                 <NavPills
                   alignCenter
-                  color="primary"
+                  color="black"
                   tabs={[
                     {
-                      tabButton: "Studio",
-                      tabIcon: Camera,
+                      tabButton: "Música",
+                      // tabIcon: Camera,
                       tabContent: (
                         <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio2}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={studio5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio4}
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      )
-                    },
+                          <GridItem >
+
+                          <iframe style={{
+     display: "inline-block",
+     position: "relative",
+     width: "380px", 
+     height: "260px", 
+     border: 0,
+     marginTop: "0%",
+     marginLeft:  "0%"}} width="200px" height="150px" src="https://www.youtube.com/embed/s15OA9nZ7AY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+          
+    <iframe style={{
+    display: "inline-block",
+    position: "relative",
+    width: "380px", 
+    height: "260px",  
+    border: 0,
+    marginTop: "0%",
+    marginLeft:  "0%"}} width="200px" height="150px" src="https://www.youtube.com/embed/HA49X3KUaA8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <iframe style={{
+     display: "inline-block",
+     position: "relative",
+     width: "380px", 
+     height: "260px", 
+     border: 0,
+     marginTop: "0%",
+     marginLeft:  "0%"}} width="200px" height="150px" src="https://www.youtube.com/embed/S-Y4cWhUE5I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+      </GridItem>      
+      </GridContainer>
+        )
+      },
                     {
-                      tabButton: "Work",
-                      tabIcon: Palette,
+                      tabButton: "Partituras",
+                      // tabIcon: Palette,
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -166,8 +183,7 @@ export default function ProfilePage3(props) {
                       )
                     },
                     {
-                      tabButton: "Favorite",
-                      tabIcon: Favorite,
+                      tabButton: "Textos",
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
@@ -206,10 +222,7 @@ export default function ProfilePage3(props) {
                 />
               </GridItem>
             </GridContainer>
-          </div>
-        </div>
-      </div>
-      <Footer />
+            </div>
     </div>
   );
 }

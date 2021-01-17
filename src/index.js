@@ -25,11 +25,11 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/landing-page" component={LandingPage} />
+      <Route path='/diegovillasenordecortina' component={ProfilePage3}/>
+      <Route path='/renzofilinich' component={ProfilePage2}/>
       <Route path="/royfguzman" component={ProfilePage1} />
-      <Route path='/renzofilinich' component = {ProfilePage2}/>
-      <Route path='/diegoviallsenordecortina' component = {ProfilePage3}/>
-      <Route path='/felipecorredortrellez' component = {ProfilePage4}/>
-      <Route path='/danielfloresdias' component = {ProfilePage5}/>
+      <Route path='/felipecorredortrellez' component={ProfilePage4}/>
+      <Route path='/danielfloresdias' component={ProfilePage5}/>
       <Route path='/pedroemanuelfrancofraticelli' component = {ProfilePage6}/>
       <Route path="/login-page" component={LoginPage} />
       <Route path="/" component={Components} />

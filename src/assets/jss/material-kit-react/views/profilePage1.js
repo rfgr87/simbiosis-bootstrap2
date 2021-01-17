@@ -1,5 +1,5 @@
 import { container, title } from "assets/jss/material-kit-react.js";
-import image1 from "assets/img/decolonial-fotos/foto-piezaroy1.jpg";
+
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
 const profilePageStyle = {
@@ -29,7 +29,7 @@ const profilePageStyle = {
     zIndex: "3"
   },
   mainRaised: {
-    margin: "-600px 20% 0px",
+    margin: "-8700px 30px 0px",
     borderRadius: "6px",
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)"
@@ -40,8 +40,7 @@ const profilePageStyle = {
     position: "relative",
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none",
-    color: "black"
+    textDecoration: "none"
   },
   socials: {
     marginTop: "0",
@@ -52,7 +51,7 @@ const profilePageStyle = {
     height: "100%",
     lineHeight: "41px",
     fontSize: "20px",
-    color: "black"
+    color: "#999"
   },
   navWrapper: {
     margin: "20px auto 50px auto",

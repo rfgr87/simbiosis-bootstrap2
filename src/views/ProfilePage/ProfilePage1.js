@@ -17,7 +17,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import NavPills from "components/NavPills/NavPills.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Parallax2 from "components/Parallax/Parallax2.js";
 
 import image1 from "assets/img/decolonial-fotos/foto-piezaroy1.jpg";
 
@@ -35,18 +35,23 @@ import work3 from "assets/img/examples/cynthia-del-rio.jpg";
 import work4 from "assets/img/examples/mariya-georgieva.jpg";
 import work5 from "assets/img/examples/clem-onojegaw.jpg";
 
-import styles from "assets/jss/material-kit-react/views/profilePage1.js";
+import styles1 from "assets/jss/material-kit-react/views/profilePage1.js";
+// import styles2 from "assets/jss/material-kit-react/views/profilePage1.js";
+import styles2 from "assets/jss/material-kit-react/components/parallaxStyle1.js";
 
-const useStyles = makeStyles(styles);
+const useStyles1 = makeStyles(styles1);
+const useStyles2 = makeStyles(styles2);
 
 export default function ProfilePage1(props) {
-  const classes = useStyles();
+  const classes = useStyles1();
   const { ...rest } = props;
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgFluid
   );
   const navImageClasses = classNames(classes.imgGallery);
+
+  const classes2 = useStyles2();
   return (
     <div>
        <Header
@@ -60,7 +65,7 @@ export default function ProfilePage1(props) {
         }}
         {...rest}
       />
-      <Parallax style = {{height: "10000px", backgroundAttachment: "fixed"}} small image={require("assets/img/decolonial-fotos/foto-piezaroy1.jpg")} />
+      <Parallax2 style = {{height: "20000px", backgroundAttachment: "fixed"}} small image={require("assets/img/decolonial-fotos/foto-piezaroy1.jpg")} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container} style = {{paddingBottom: "80px"}}>
@@ -99,21 +104,7 @@ export default function ProfilePage1(props) {
           
         </div>
       </div>
-      <div style={{ 
-      // minWidth: "550px",
-      position: "relative",
-      backgroundImage: `url(${image2})`,
-      height: "2000px",
-      position: "absolute",
-      backgroundPosition: 'center',
-      backgroundSize: "cover",  
-      backgroundRepeat: "no-repeat",
-      width: "100%",
-      paddingBottom: "0%",  
-      // marginBottom: "2000px",  
-      marginTop: "-20px",
-      marginLeft: "0%",
-      paddingTop: 0}}>
+      <div>
       <GridContainer justify="center">
               <GridItem  className={classes.navWrapper}>
                 <NavPills

@@ -29,12 +29,17 @@ import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import styles2 from "assets/jss/material-kit-react/components/parallaxStyle.js";
 
 const useStyles = makeStyles(styles);
+const useStyles2 = makeStyles(styles2);
+
 
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+
+  const classes2 = useStyles2();
   return (
     <div>
       <Header
@@ -48,7 +53,7 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/decolonial-fotos/foto-decolonial1.jpg")}>
+      <Parallax className = {{classes2}} image={require("assets/img/decolonial-fotos/foto-decolonial1.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
