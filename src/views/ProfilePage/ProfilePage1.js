@@ -25,6 +25,7 @@ import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 import profile from "assets/img/decolonial-fotos/foto-roy1.png";
 import image3 from "assets/img/decolonial-fotos/foto-roy-aurora2.jpg";
 import image4 from "assets/img/decolonial-fotos/foto-roy-fractalidad-criolla.png";
+import image5 from "assets/img/decolonial-fotos/foto-roy-garabato1.png";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -105,11 +106,11 @@ export default function ProfilePage1(props) {
               <GridItem xs={12} sm={12} md={6}>
                 <div>
                   <div>
-                    <img style = {{marginLeft: "2%", marginTop: "20%", position: "relative", display: "block", width: "50%", height: "50%"}} src={profile} alt="..." />
+                    <img style = {{marginLeft: "5%", marginTop: "20%", position: "relative", display: "block", width: "50%", height: "50%"}} src={profile} alt="..." />
                   </div>
                   <div >
-                    <h3 style={{color: "black", marginLeft:  "2%", marginTop: "2%", dislay: "block", position: "relative", fontFamily: 'Menlo', fontSize: "30px", fontWeight: "600", width:"50%", backgroundColor: "white"}}>Roy F Guzmán</h3>
-                    <div style ={{marginLeft: "2%"}}>
+                    <h3 style={{color: "black", marginLeft:  "5%", marginTop: "2%", dislay: "block", position: "relative", fontFamily: 'Menlo', fontSize: "30px", fontWeight: "600", width:"50%", backgroundColor: "white"}}>Roy F Guzmán</h3>
+                    <div style ={{marginLeft: "5%"}}>
                     <Button styles = {{ marginLeft:  "2%"}} >
                       <i style = {{display: "block", color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"} />
                     </Button>
@@ -135,9 +136,31 @@ export default function ProfilePage1(props) {
             </div>
 
           <div style={{ 
-            position: "absolute",
+                          display: "inline-block",
+
+            position: "relative",
             backgroundImage: `url(${image4})`,
             width: "300px",
+            height: "300px",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            marginLeft:  "2%",
+            padding: 0}}></div>
+            <div style={{ 
+              display: "inline-block",
+            position: "relative",
+            backgroundImage: `url(${image3})`,
+            width: "350px",
+            height: "450px",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            marginLeft:  "2%",
+            padding: 0}}></div>
+            <div style={{ 
+              display: "inline-block",
+            position: "relative",
+            backgroundImage: `url(${image5})`,
+            width: "400px",
             height: "300px",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
