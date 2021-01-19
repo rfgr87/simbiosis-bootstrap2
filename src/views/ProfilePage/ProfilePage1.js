@@ -67,7 +67,8 @@ export default function ProfilePage1(props) {
   return (
     <div style={{ 
       position: "absolute",
-      backgroundImage: `url(${image3})`,
+      backgroundColor: "white",
+      // backgroundImage: `url(${image3})`,
       height: "2500px",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -131,7 +132,7 @@ export default function ProfilePage1(props) {
               </p>
             </div>
 
-          <div style={{ 
+          {/* <div style={{ 
             position: "absolute",
             backgroundImage: `url(${image4})`,
             width: "300px",
@@ -139,7 +140,7 @@ export default function ProfilePage1(props) {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             marginLeft:  "2%",
-            padding: 0}}></div>
+            padding: 0}}></div> */}
               
             
             </div>
