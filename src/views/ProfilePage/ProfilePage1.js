@@ -134,8 +134,8 @@ export default function ProfilePage1(props) {
           <div style={{ 
             position: "absolute",
             backgroundImage: `url(${image4})`,
-            width: "400px",
-            height: "400px",
+            width: "300px",
+            height: "300px",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             marginLeft:  "2%",
