@@ -22,7 +22,7 @@ import Parallax2 from "components/Parallax/Parallax2.js";
 import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 
 import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
-import profile from "assets/img/simbiosis-fotos/kevinjomar.png";
+import profile from "assets/img/simbiosis-fotos/karinadelmar.png";
 import image3 from "assets/img/decolonial-fotos/foto-roy-aurora2.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
@@ -53,7 +53,7 @@ import styles2 from "assets/jss/material-kit-react/components/parallaxStyle1.js"
 const useStyles1 = makeStyles(styles1);
 const useStyles2 = makeStyles(styles2);
 
-export default function ProfilePage3(props) {
+export default function ProfilePage7(props) {
   const classes = useStyles1();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -97,7 +97,7 @@ export default function ProfilePage3(props) {
                   </div>
                   </div>
                   <div>
-                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Kevin Jomar Rivera Calderón</h3>
+                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Karina “Del Mar” Rodríguez</h3>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -112,7 +112,9 @@ export default function ProfilePage3(props) {
             </GridContainer>
             <div >
               <p style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "15px", fontWeight: "600", width:"75%"}}>
-              {"Kevin Jomar Rivera Calderón (n.1999), compositor, bajista y sociólogo en formación. Desde los 10 años comenzó a tomar clases de bajo eléctrico en la Escuela de Bellas Artes en Comerío, entrando luego a la Tuna Estudiantil de Cidra y, más tarde, al programa de Jazz y Música Caribeña del Conservatorio de Música de Puerto Rico. A través de armonías extendidas, elementos de la onda del neo-soul y contrastes más vanguardistas, su trabajo composicional surge como respuesta a la situación socio-política que atraviesa constantemente la isla de Puerto Rico."}<br></br><br></br>
+              {"Karina “Del Mar” Rodríguez (n.1994) began her musical education at the age of 8 after being accepted to the San Juan’s Children Choir of Puerto Rico, learning vocal techniques, music theory and valuable lessons in discipline and musicality. At the age of 12, the decision of learning two instruments, guitar and piano, became pivotal in establishing her as the singer-songwriter and composer she is today."}<br></br><br></br>
+            {"In 2014, she impressed at the Conservatory of Music of Puerto Rico through the Music Composition Degree being part of Composer’s Collective Simbiosis, the Conservatory’s choir, and the Latin-American Folk Ensemble. Soon after, her passion for teaching led her to work as a freelancer, along with various music academies, as a piano, guitar and voice teacher."}<br></br><br></br>
+            {"Currently based in Boston, Karina works as Manager and HR for a music education company EchoKids, as well as Managing Director for TalkingLabz. She’s a 7th semester undergraduate student at Berklee College of Music through the Contemporary Writing and Production degree. She’s an independent producer-singer-songwriter under the alias of Cuentosparaa."}<br></br><br></br>
               </p>
               </div>
             

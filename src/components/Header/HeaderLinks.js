@@ -47,10 +47,37 @@ export default function HeaderLinks(props) {
           }}
           // buttonIcon={Apps}
           dropdownList={[
-          <Link to={"/pedrofrancofraticelli"} className={classes.dropdownLink}>
+        <Link to={"/pedrofranco"} className={classes.dropdownLink}>
               Pedro Emanuel Franco Fraticelli
-          </Link>
-          ]}
+        </Link>,
+        <Link to={"/luisfernando"} className={classes.dropdownLink}>
+           Luis Fernando Ruiz-Pacheco
+        </Link>,
+        <Link to={"/kevinjomar"} className={classes.dropdownLink}>
+            Kevin Jomar Rivera Calderón
+        </Link>,
+         <Link to={"/hibana"} className={classes.dropdownLink}>
+         Hibana (a.k.a. Marney Ackerman)
+        </Link>,
+         <Link to={"/josuevera"} className={classes.dropdownLink}>
+         Josué Vera
+        </Link>,
+        <Link to={"/jaimerivera"} className={classes.dropdownLink}>
+          Jaime “Flauta” Rivera González
+        </Link>,
+        <Link to={"/karinarodriguez"} className={classes.dropdownLink}>
+          Karina “Del Mar” Rodríguez 
+        </Link>,
+        <Link to={"/agustinmunoz"} className={classes.dropdownLink}>
+          Agustín Muñoz Ríos
+        </Link>,
+        <Link to={"/julioquinones"} className={classes.dropdownLink}>
+        Julio Elvin Quiñones Santiago
+        </Link>,
+        <Link to={"/emmanuelsegarra"} className={classes.dropdownLink}>
+        Emmanuel Segarra Ortiz
+        </Link>
+        ]}
         />
       </ListItem>
 

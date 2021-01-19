@@ -22,7 +22,7 @@ import Parallax2 from "components/Parallax/Parallax2.js";
 import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 
 import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
-import profile from "assets/img/simbiosis-fotos/kevinjomar.png";
+import profile from "assets/img/simbiosis-fotos/agustinmunoz.png";
 import image3 from "assets/img/decolonial-fotos/foto-roy-aurora2.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
@@ -53,7 +53,7 @@ import styles2 from "assets/jss/material-kit-react/components/parallaxStyle1.js"
 const useStyles1 = makeStyles(styles1);
 const useStyles2 = makeStyles(styles2);
 
-export default function ProfilePage3(props) {
+export default function ProfilePage7(props) {
   const classes = useStyles1();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -97,7 +97,7 @@ export default function ProfilePage3(props) {
                   </div>
                   </div>
                   <div>
-                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Kevin Jomar Rivera Calderón</h3>
+                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Agustín Muñoz Ríos</h3>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -112,7 +112,7 @@ export default function ProfilePage3(props) {
             </GridContainer>
             <div >
               <p style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "15px", fontWeight: "600", width:"75%"}}>
-              {"Kevin Jomar Rivera Calderón (n.1999), compositor, bajista y sociólogo en formación. Desde los 10 años comenzó a tomar clases de bajo eléctrico en la Escuela de Bellas Artes en Comerío, entrando luego a la Tuna Estudiantil de Cidra y, más tarde, al programa de Jazz y Música Caribeña del Conservatorio de Música de Puerto Rico. A través de armonías extendidas, elementos de la onda del neo-soul y contrastes más vanguardistas, su trabajo composicional surge como respuesta a la situación socio-política que atraviesa constantemente la isla de Puerto Rico."}<br></br><br></br>
+              {"Agustín Muñoz Ríos (n.1981) músico, compositor, cantautor, guitarrista y titiritero puertorriqueño. De niño estudió cuatro puertorriqueño, teoría, y solfeo en la Fundación Francisco López Cruz; también aprendió el arte de la plena de maestros como Roberto Cipreni (Pleneros de la 23 Abajo), José Pipo Reyes (Terraplén), Anthony Carrillo (Batacumbele) y Gerardo Rivera. Durante su adolescencia, bajo la dirección de Juan Carlos Vega, fue parte del Coro del Colegio San Ignacio de Loyola, con el que se presentó en Puerto Rico y Washington D.C. Estudió Composición en el Conservatorio de Música de Puerto Rico con el profesor Manuel J. Ceide, habiendo tomado además cursos de guitarra clásica con Leonardo Egúrbida, Luis Enrique Juliá y Rubén Santiago. El 27 de enero de 2018 presentó su recital de graduación, “El huracán de mi gente”, en la sala Anthony Junior Soto del teatro del Conservatorio."}<br></br><br></br>
               </p>
               </div>
             

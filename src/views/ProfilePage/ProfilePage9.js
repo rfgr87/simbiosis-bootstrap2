@@ -22,7 +22,7 @@ import Parallax2 from "components/Parallax/Parallax2.js";
 import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 
 import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
-import profile from "assets/img/simbiosis-fotos/kevinjomar.png";
+import profile from "assets/img/simbiosis-fotos/julioquinone.png";
 import image3 from "assets/img/decolonial-fotos/foto-roy-aurora2.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
@@ -53,7 +53,7 @@ import styles2 from "assets/jss/material-kit-react/components/parallaxStyle1.js"
 const useStyles1 = makeStyles(styles1);
 const useStyles2 = makeStyles(styles2);
 
-export default function ProfilePage3(props) {
+export default function ProfilePage9(props) {
   const classes = useStyles1();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -97,7 +97,7 @@ export default function ProfilePage3(props) {
                   </div>
                   </div>
                   <div>
-                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Kevin Jomar Rivera Calderón</h3>
+                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Julio Elvin Quiñones Santiago</h3>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -112,12 +112,16 @@ export default function ProfilePage3(props) {
             </GridContainer>
             <div >
               <p style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "15px", fontWeight: "600", width:"75%"}}>
-              {"Kevin Jomar Rivera Calderón (n.1999), compositor, bajista y sociólogo en formación. Desde los 10 años comenzó a tomar clases de bajo eléctrico en la Escuela de Bellas Artes en Comerío, entrando luego a la Tuna Estudiantil de Cidra y, más tarde, al programa de Jazz y Música Caribeña del Conservatorio de Música de Puerto Rico. A través de armonías extendidas, elementos de la onda del neo-soul y contrastes más vanguardistas, su trabajo composicional surge como respuesta a la situación socio-política que atraviesa constantemente la isla de Puerto Rico."}<br></br><br></br>
+              {"Julio Elvin Quiñones Santiago Compositor, saxofonista y director puertorriqueño; conocido por su música convincente, expresiva y socialmente consciente, Quiñones Santiago escribe obras que están imbuidas de pasión, intuición y representan todos los aspectos de su identidad. Desde un gran conjunto hasta un solo y obras de cámara, su enfoque en desarrollar un estilo abstracto que reconozca su identidad puertorriqueña [desde la música folclórica, la música popular, los ritmos caribeños, la literatura nacional e internacional, hasta la agitación política y social] está siempre presente."}<br></br><br></br> 
+              {"Ha tenido varias colaboraciones con importantes conjuntos en la isla y en el extranjero. Su pieza para banda de viento: Elegía (en memoria de las víctimas del huracán María) se estrenó la Banda de Conciertos del Conservatorio de Música de PR (CMPR). The Young Artists Concerts Orchestra de PR encargó su pieza: Mosaico. Su colaboración más reciente fue con el Omnibus Ensemble de Uzbekistán para su pieza: [añorando una] naturaleza perdida."}<br></br><br></br>              
+              {"Su música se ha interpretado en EE. UU., Europa; algunos de estos compromisos son: el festival highSCORE, Going Viral Non-Festival y el ClarinetFest 2017 de la International Clarinet Association."}<br></br><br></br>              
+              {"Quiñones también disfruta trabajar con artistas de otras disciplinas como la Asociación de Danza APRODANZA, que le encargó su pieza de danza: A Julia de Burgos. Como parte de dicha colaboración debutó como director estrenando su propia pieza, así como Entre : Meses con el CMPR Pierrot Ensemble. Después de los compromisos de dirección han incluido la Banda de Conciertos de CMPR y la Orquesta de Conciertos de Jóvenes Artistas."}<br></br><br></br>
+              {"Como saxofonista, ha realizado conciertos de música nueva y regular con la Banda de Conciertos CMPR y la Sinfónica de Viento de Puerto Rico."}<br></br><br></br>
+              {"Julio actualmente está completando su maestría en Composición Musical en el Conservatorio Peabody con Michael Hersch. Tiene una licenciatura en Composición Musical del Conservatorio de Música de Puerto Rico, donde estudió composición y orquestación con Alfonso Fuentes."}<br></br><br></br>
+              {"También es co-creador y editor del podcast de música clásica puertorriqueña: Conversaciones Simbióticas Podcast y creador, narrador, editor y productor del audiolibro-podcast: Textos Audibles Podcast."}<br></br><br></br>
               </p>
-              </div>
-            
-            </div>
-            
+              </div>        
+            </div>      
           </div>
         </div>
 {/*        

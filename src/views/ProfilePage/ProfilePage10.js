@@ -22,7 +22,7 @@ import Parallax2 from "components/Parallax/Parallax2.js";
 import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 
 import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
-import profile from "assets/img/simbiosis-fotos/kevinjomar.png";
+import profile from "assets/img/simbiosis-fotos/emanuelsegarra.png";
 import image3 from "assets/img/decolonial-fotos/foto-roy-aurora2.jpg";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
@@ -53,7 +53,7 @@ import styles2 from "assets/jss/material-kit-react/components/parallaxStyle1.js"
 const useStyles1 = makeStyles(styles1);
 const useStyles2 = makeStyles(styles2);
 
-export default function ProfilePage3(props) {
+export default function ProfilePage7(props) {
   const classes = useStyles1();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -97,7 +97,7 @@ export default function ProfilePage3(props) {
                   </div>
                   </div>
                   <div>
-                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Kevin Jomar Rivera Calderón</h3>
+                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Karina “Del Mar” Rodríguez</h3>
                     <Button justIcon link className={classes.margin5}>
                       <i className={"fab fa-twitter"} />
                     </Button>
@@ -112,8 +112,10 @@ export default function ProfilePage3(props) {
             </GridContainer>
             <div >
               <p style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "15px", fontWeight: "600", width:"75%"}}>
-              {"Kevin Jomar Rivera Calderón (n.1999), compositor, bajista y sociólogo en formación. Desde los 10 años comenzó a tomar clases de bajo eléctrico en la Escuela de Bellas Artes en Comerío, entrando luego a la Tuna Estudiantil de Cidra y, más tarde, al programa de Jazz y Música Caribeña del Conservatorio de Música de Puerto Rico. A través de armonías extendidas, elementos de la onda del neo-soul y contrastes más vanguardistas, su trabajo composicional surge como respuesta a la situación socio-política que atraviesa constantemente la isla de Puerto Rico."}<br></br><br></br>
-              </p>
+              {"Emmanuel Segarra Ortiz (b.1997) Bayamón, Puerto Rico. Creció en una familia musical donde aprendió a tocar la trompeta gracias a su padre y luego el saxofón alto cuando ingresó a la Escuela Libre de Música en San Juan. En 2014 ganó el premio al Mejor Compositor otorgado por el Instituto Smithsonian en el Concurso de Banda de Concierto American Sabor y en ese evento Emmanuel tuvo la oportunidad de debutar como director con la Banda de Concierto de la Escuela Libre de Música y luego con la Banda de Conciertos de Puerto Rico."}<br></br><br></br>
+              {"En 2018 ganó el premio a la mejor Danza Instrumental del Instituto de Cultura de Puerto Rico (ICP) y ese mismo año cofundó junto al pianista Bryan Ojeda Chevres la Serie de Conciertos Young Artist Concert Series of Puerto Rico (YACSPR) y la Young Artists Concet Orchestra of Puerto Rico (YACOPR), iniciativas que brindan a jóvenes músicos y compositores la oportunidad de darse a conocer y exponerse a un escenario público real. En el 2019 se graduó con honores obteniendo un Bachillerato en Composición del Conservatorio de Música de Puerto Rico (CMPR), bajo la tutela del reconocido compositor Alfonso Fuentes. En su recital de graduación tuvo la oportunidad de dirigir la Sinfónica de Vientos de Puerto Rico (PRWS) estrenando su Concertino para Trompeta y Banda acompañado del reconocido trompetista José Valdés. En el verano de 2019 fue aceptado en el Film Scoring Summer Workshop de la Universidad de Nueva York (NYU) donde tuvo la oportunidad de intercambiar ideas y aprender de los compositores: Michael Levine, Mark Snow y Mark Souzzo. En 2020 el Instituto de Cultura de Puerto Rico otorgó a Emmanuel Segarra el premio Narciso Figueroa por su danza contemporánea."}<br></br><br></br>
+              {"Emmanuel también tuvo diferentes oportunidades para crear música para diferentes plataformas de medios, incluida la colaboración con la Universidad de Puerto Rico y la Universidad del Sagrado Corazón."}   
+             </p>
               </div>
             
             </div>
