@@ -24,6 +24,7 @@ import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 import profile from "assets/img/decolonial-fotos/foto-roy1.png";
 import image3 from "assets/img/decolonial-fotos/foto-roy-aurora2.jpg";
+import image4 from "assets/img/decolonial-fotos/foto-roy-fractalidad-criolla.png";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -67,12 +68,12 @@ export default function ProfilePage1(props) {
     <div style={{ 
       position: "absolute",
       backgroundImage: `url(${image3})`,
-      height: "1900px",
+      height: "2000px",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       width: "100%",
-      padddingRigth: "45px",
-      paddingBottom: "200px",
+      padddingRigth: "0px",
+      paddingBottom: "0px",
       margin: 0,
       padding: 0}}>
        <Header
@@ -87,44 +88,65 @@ export default function ProfilePage1(props) {
         {...rest}
       />
         <div>  {/* <div style = {{border: "black", borderWidth: "3px", borderStyle: "outset",backgroundColor: "white", width: "75%", marginLeft: "12.5%", marginTop: "15%"}}> */}
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div style={{ 
+      position: "relative",
+      backgroundImage: `url(${image3})`,
+      height: "2000px",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      width: "100%",
+      padddingRigth: "0px",
+      paddingBottom: "0px",
+      margin: 0,
+      padding: 0}}>
         <div>
             <GridContainer justify="left" >
               <GridItem xs={12} sm={12} md={6}>
-                <div className={classes.profile}>
+                <div>
                   <div>
-                    <img src={profile} alt="..." className={imageClasses} />
+                    <img style = {{marginLeft: "2%", marginTop: "20%", position: "relative", display: "block", width: "50%", height: "50%"}} src={profile} alt="..." />
                   </div>
-                  <div className={classes.name}>
-                    <h3 className={classes.title}>Roy F Guzmán</h3>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
+                  <div >
+                    <h3 style={{color: "black", marginLeft:  "2%", marginTop: "2%", dislay: "block", position: "relative", fontFamily: 'Menlo', fontSize: "30px", fontWeight: "600", width:"50%", backgroundColor: "white"}}>Roy F Guzmán</h3>
+                    <Button styles = {{ marginLeft:  "2%"}} >
+                      <i style = {{color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
+                    <Button >
+                      <i style = {{color: "black"}} className={"fab fa-instagram"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
+                    <Button >
+                      <i style = {{color: "black"}} className={"fab fa-facebook"} />
                     </Button>
                   </div>
                 </div>
               </GridItem>
-            </GridContainer>
-            <div className={classes.description}>
-              <p>
+            </GridContainer>  
+            <div>
+              <p style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'Menlo', fontSize: "15px", fontWeight: "600", width:"75%", backgroundColor: "white"}}>
               {"Roy F Guzmán - Compositor de música electrónica algorítmica e instrumental, improvisador y poeta nacido en San Juan, Puerto Rico el 28 de junio de 1987."} <br></br><br></br>
               {"Sus temas de investigaciones previas y actuales son la teoría del caos para material estructural musical, el tema de “abstracciones” trabajado mediante partituras sonoras con instrumentos utilizándolas como una metáfora de la percepción de toda la realidad, “Música a Lo Pobre” que incluye el tema de la resiliencia, la estética que produce las limitaciones auténticas de los sistemas como universal abstracta del folklor, la no dualidad, el concepto de axiomas de objetos conceptuales y físicos, geometrías abstractas en formas musicales, el estudio y formalización de la lectura de partituras no tradicionales, la expansión de la parametrización y constructos musicales, la investigación del concepto de Formas Sonoras Plásticas donde crea técnicas para producir la ilusión de un sólido en un medio temporal con el programa El Cubo De Chuito para manipulación de audio en 3 dimensiones y la creación de música conceptual basada en teorías sobre la espiritualidad abstracta indígena Taina."}<br></br><br></br>
               {"Recientemente explora la Meta Composición donde se propone que la abstracción perceptual llamada realidad se ve afectada por las estructuras objetuales, constructos nuevos, formas, símbolos y textos composicionales."}<br></br><br></br>
               {"Creó la Poesía Concreta Multi Semiótica donde se explora el multi semiotismo sincrónico y asincrónico y la Meta Poesía Integral donde se explora el color semiótico como una integral de un multisemiotismo de una gestalt universal popular. También investiga y crea deducciones y creaciones sobre la metafísica de la espiritualidad ancestral latinoamericana y su potencial desarrollo axiomático y abstracto para la creación de nuevos constructos y filosofías que tienen el potencial de alterar la realidad perceptual."}
               {" "}
               </p>
-              </div>
+            </div>
+
+          <div style={{ 
+            position: "absolute",
+            backgroundImage: `url(${image4})`,
+            width: "400px",
+            height: "400px",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            marginLeft:  "2%",
+            padding: 0}}></div>
+              
             
             </div>
             
           </div>
         </div>
-        <div style={{ 
+        {/* <div style={{ 
           position: "absolute",
           backgroundImage: `url(${image1})`,
           height: "3000px",
@@ -407,6 +429,8 @@ export default function ProfilePage1(props) {
               </GridItem>
             </GridContainer>
             </div>
+            */}
+            
     </div>
   );
 }

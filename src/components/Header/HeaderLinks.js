@@ -37,7 +37,7 @@ export default function HeaderLinks(props) {
               Nosotros
         </Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
+       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Compositores"
@@ -52,7 +52,7 @@ export default function HeaderLinks(props) {
           </Link>
           ]}
         />
-      </ListItem>
+      </ListItem> 
       {/* <ListItem className={classes.listItem}>
       <Link to="/releases" className={classes.navLink}>
               Releases
