@@ -27,23 +27,48 @@ import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
+import Navigation from "components/navigation";
+import image1 from "assets/img/simbiosis-fotos/foto-simbiosis1.jpg";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import styles1 from "assets/jss/material-kit-react/views/profilePage.js";
 import styles2 from "assets/jss/material-kit-react/components/parallaxStyle.js";
 
 const useStyles = makeStyles(styles);
+const useStyles1 = makeStyles(styles1);
 const useStyles2 = makeStyles(styles2);
 
 
 export default function Components(props) {
-  const classes = useStyles();
+  const classes1 = useStyles();
+  // const { ...rest } = props;
+
+  const classes = useStyles1();
   const { ...rest } = props;
+  const imageClasses = classNames(
+    classes.imgRaised,
+    classes.imgFluid
+  );
 
   const classes2 = useStyles2();
   return (
-    <div>
+    <div style={{ 
+      position: "absolute",
+      backgroundColor: "white",
+      height: "320%",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundSize: "100%",
+      width: "100%",
+
+      // width: "100%",
+      padddingTop: "1000px",
+      paddingBottom: "200px",
+      margin: 0,
+      padding: 0}}>
+ 
       <Header
-        brand="CMEPR"
+        brand="Colectivo Simbiosis"
         rightLinks={<HeaderLinks />}
         fixed
         color="black"
@@ -52,24 +77,18 @@ export default function Components(props) {
           color: "black"
         }}
         {...rest}
-      />
-      <Parallax className = {{classes2}} image={require("assets/img/decolonial-fotos/foto-pieza-grafica1.jpg")}>
-        <div className={classes.container}>
+      /> 
+        <div style = {{marginTop: "100px"}} className={classes1.container}>
           <GridContainer>
             <GridItem>
-              <div className={classes.brand}>
-                <h1 className={classes.title}>CMEPR</h1>
-                <h2 style = {{fontSize: "45px"}}>[Colectivo de Música Experimental de Puerto Rico]</h2>
-                {/* <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
-                </h3> */}
-              </div>
+            <div>
+                    <img src={image1} alt="..." className={imageClasses} />
+                  </div>
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
-{/* 
-      <div className={classNames(classes.main, classes.mainRaised)}>
+
+      {/* <div className={classNames(classes.main, classes.mainRaised)}>
         <SectionBasics />
         <SectionNavbars />
         <SectionTabs />
@@ -89,8 +108,8 @@ export default function Components(props) {
         </GridItem>
         <SectionExamples />
         <SectionDownload />
-      </div> */}
-      <Footer />
+      </div>  */}
+      {/* <Footer /> */}
     </div>
   );
 }

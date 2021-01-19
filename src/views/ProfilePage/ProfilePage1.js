@@ -22,10 +22,8 @@ import Parallax2 from "components/Parallax/Parallax2.js";
 import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
 
 import image2 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
-import profile from "assets/img/decolonial-fotos/foto-roy1.png";
+import profile from "assets/img/simbiosis-fotos/foto-pedro1.png";
 import image3 from "assets/img/decolonial-fotos/foto-roy-aurora2.jpg";
-import image4 from "assets/img/decolonial-fotos/foto-roy-fractalidad-criolla.png";
-import image5 from "assets/img/decolonial-fotos/foto-roy-garabato1.png";
 
 import studio1 from "assets/img/examples/studio-1.jpg";
 import studio2 from "assets/img/examples/studio-2.jpg";
@@ -68,17 +66,17 @@ export default function ProfilePage1(props) {
   return (
     <div style={{ 
       position: "absolute",
-      backgroundImage: `url(${image3})`,
-      height: "2300px",
+      backgroundColor: `white`,
+      height: "1900px",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       width: "100%",
-      padddingRigth: "0px",
-      paddingBottom: "0px",
+      padddingRigth: "45px",
+      paddingBottom: "200px",
       margin: 0,
       padding: 0}}>
        <Header
-        brand="CMEPR"
+        brand="Colectivo Simbiosis"
         rightLinks={<HeaderLinks />}
         fixed
         color="black"
@@ -89,102 +87,43 @@ export default function ProfilePage1(props) {
         {...rest}
       />
         <div>  {/* <div style = {{border: "black", borderWidth: "3px", borderStyle: "outset",backgroundColor: "white", width: "75%", marginLeft: "12.5%", marginTop: "15%"}}> */}
-      <div style={{ 
-      position: "relative",
-      backgroundColor: "white",
-      // backgroundImage: `url(${image3})`,
-      height: "2300px",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      width: "100%",
-      padddingRigth: "0px",
-      paddingBottom: "0px",
-      margin: 0,
-      padding: 0}}>
+      <div>
         <div>
             <GridContainer justify="left" >
               <GridItem xs={12} sm={12} md={6}>
-                <div>
+                <div >
                   <div>
-                    <img style = {{marginLeft: "5%", marginTop: "20%", position: "relative", display: "block", width: "50%", height: "50%"}} src={profile} alt="..." />
+                    <img style = {{marginLeft: "2%", marginTop: "20%", position: "relative", display: "block", width: "70%", height: "70%"}} src={profile} alt="..." />
                   </div>
-                  <div >
-                    <h3 style={{color: "black", marginLeft:  "5%", marginTop: "2%", dislay: "block", position: "relative", fontFamily: 'Menlo', fontSize: "30px", fontWeight: "600", width:"50%", backgroundColor: "white"}}>Roy F Guzmán</h3>
-                    <div style ={{marginLeft: "5%"}}>
-                    <Button styles = {{ marginLeft:  "2%"}} >
-                      <i style = {{display: "block", color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"} />
-                    </Button>
-                    <Button >
-                      <i style = {{display: "block", color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"} className={"fab fa-instagram"} />
-                    </Button>
-                    <Button >
-                      <i style = {{display: "block", color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"}  className={"fab fa-facebook"} />
-                    </Button>
-                    </div>
                   </div>
-                </div>
+                  <div>
+                    <h3 style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "30px", fontWeight: "600"}}>Pedro Emanuel Franco Fraticelli</h3>
+                    <Button justIcon link className={classes.margin5}>
+                      <i className={"fab fa-twitter"} />
+                    </Button>
+                    <Button justIcon link className={classes.margin5}>
+                      <i className={"fab fa-instagram"} />
+                    </Button>
+                    <Button justIcon link className={classes.margin5}>
+                      <i className={"fab fa-facebook"} />
+                    </Button>
+                  </div>
               </GridItem>
-            </GridContainer>  <br></br>
-            <div>
-              <p style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'Menlo', fontSize: "15px", fontWeight: "600", width:"75%", backgroundColor: "white"}}>
-              {"Roy F Guzmán - Compositor de música electrónica algorítmica e instrumental, improvisador y poeta nacido en San Juan, Puerto Rico el 28 de junio de 1987."} <br></br><br></br>
-              {"Sus temas de investigaciones previas y actuales son la teoría del caos para material estructural musical, el tema de “abstracciones” trabajado mediante partituras sonoras con instrumentos utilizándolas como una metáfora de la percepción de toda la realidad, “Música a Lo Pobre” que incluye el tema de la resiliencia, la estética que produce las limitaciones auténticas de los sistemas como universal abstracta del folklor, la no dualidad, el concepto de axiomas de objetos conceptuales y físicos, geometrías abstractas en formas musicales, el estudio y formalización de la lectura de partituras no tradicionales, la expansión de la parametrización y constructos musicales, la investigación del concepto de Formas Sonoras Plásticas donde crea técnicas para producir la ilusión de un sólido en un medio temporal con el programa El Cubo De Chuito para manipulación de audio en 3 dimensiones y la creación de música conceptual basada en teorías sobre la espiritualidad abstracta indígena Taina."}<br></br><br></br>
-              {"Recientemente explora la Meta Composición donde se propone que la abstracción perceptual llamada realidad se ve afectada por las estructuras objetuales, constructos nuevos, formas, símbolos y textos composicionales."}<br></br><br></br>
-              {"Creó la Poesía Concreta Multi Semiótica donde se explora el multi semiotismo sincrónico y asincrónico y la Meta Poesía Integral donde se explora el color semiótico como una integral de un multisemiotismo de una gestalt universal popular. También investiga y crea deducciones y creaciones sobre la metafísica de la espiritualidad ancestral latinoamericana y su potencial desarrollo axiomático y abstracto para la creación de nuevos constructos y filosofías que tienen el potencial de alterar la realidad perceptual."}
-              {" "}
+            </GridContainer>
+            <div >
+              <p style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'AmericanTypewriter-CondensedLight', fontSize: "15px", fontWeight: "600", width:"75%"}}>
+              {"Pedro Emanuel Franco Fraticelli (1988-)"}<br></br><br></br>
+              {"Es un guitarrista eléctrico, cantautor, productor de conciertos y compositor puertorriqueño. El trabajo de Pedro se ha realizado en Carnegie Mellon School of Drama; Nuyorican Poets Cafe; Casa Cultural Ruth Hernández; Universidad de Puerto Rico; Ateneo Puertorriqueño; The Gallery Inn; Paseo de los Artistas VIP; y el Conservatorio de Música de Puerto Rico, entre otros. También músico, Pedro es fundador del podcast Colectivo Simbiosis, Conversaciones Simbióticas y la Serie de Conciertos de Jóvenes Artistas."}<br></br><br></br>
+              {"Pedro tiene una licenciatura en Composición Musical del Conservatorio de Música de Puerto Rico. Su trabajo composicional es experimental y sensible a la conciencia del escucha; vacila constantemente entre la experimentación musical y el formato de concierto. Algunos de sus temas de investigación son: el “poli-arte”, incorporando elementos teatrales, culturales y urbanos (como el reggaetón y el trap); además del “folclor boricua”, como la utilización del jíbaro y el cuatro puertorriqueño (instrumento nacional), apagones y la utilización de generadores de electricidad, entre otras particularidades humorísticas -y otras no tanto- del curso de la vida -y lo que pudiera considerarse “la odisea de sobrevivir”- en la isla de Puerto Rico."}<br></br><br></br> 
+              {"Otro de los temas importantes que utiliza para sus propuestas musicales es la priorización del mensaje, enfatizando en lo literal y directo, más que en la estética y abstracción musical. Esto se ve en obras de índole de crítica social, y de protesta, tocando temas como: la religión, la violencia de género, la austeridad, sátiras al (ex)gobernador corrupto (destituido recientemente de la gobernación) y en la animación de voces violentas asesinadas por alguna injusticia social; entre otras... de nuevo, particularidades puertorriqueñas."}      
               </p>
-            </div>
-
-          <div style={{ 
-                          display: "inline-block",
-
-            position: "relative",
-            backgroundImage: `url(${image4})`,
-            width: "300px",
-            height: "300px",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            marginLeft:  "2%",
-            padding: 0}}></div>
-            <div style={{ 
-              display: "inline-block",
-            position: "relative",
-            backgroundImage: `url(${image3})`,
-            width: "350px",
-            height: "450px",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            marginLeft:  "2%",
-            padding: 0}}></div>
-            <div style={{ 
-              display: "inline-block",
-            position: "relative",
-            backgroundImage: `url(${image5})`,
-            width: "400px",
-            height: "300px",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            marginLeft:  "2%",
-            padding: 0}}></div>
-              
+              </div>
             
             </div>
             
           </div>
         </div>
-        {/* <div style={{ 
-          position: "absolute",
-          backgroundImage: `url(${image1})`,
-          height: "3000px",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          width: "100%",
-          padddingRigth: "45px",
-          paddingBottom: "200px",
-          margin: 0,
-          padding: 0}}>
-    
-    
+{/*        
 
       <GridContainer justify="center">
               <GridItem  className={classes.navWrapper}>
@@ -198,128 +137,6 @@ export default function ProfilePage1(props) {
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem >
-                          <iframe style = {{
-                            display: "inline-block",
-                            position: "relative",
-                            border: 0, 
-                            width: "300px", 
-                            height: "420px", 
-                            marginTop: "0%",
-                            marginLeft:  "0%"}} 
-                            src="https://bandcamp.com/EmbeddedPlayer/album=97623958/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-28-12-20">sin-título[28-12-20] by Roy F Guzmán</a></iframe>
-                          
-                          <iframe style={{
-                            display: "inline-block",
-                            position: "relative",
-                            border: 0, 
-                            width: "300px", 
-                            height: "420px", 
-                            marginTop: "0%",
-                            marginLeft:  "0%"}} 
-                            src="https://bandcamp.com/EmbeddedPlayer/album=1694358983/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/m">[M] by Roy F Guzman</a></iframe>   
-                         
-                          <iframe style={{
-                            display: "inline-block",
-                            position: "relative",
-                            border: 0, 
-                            width: "300px", 
-                            height: "420px", 
-                            marginTop: "0%",
-                            marginLeft:  "0%"}} 
-                            src="https://bandcamp.com/EmbeddedPlayer/album=4107089838/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-10-4-20-3">sin-título[10-4-20][3] by Roy F Guzmán</a></iframe> 
-                          <iframe style={{
-                            display: "inline-block",
-                            position: "relative",
-                            border: 0, 
-                            width: "300px", 
-                            height: "420px", 
-                            marginTop: "0%",
-                            marginLeft:  "0%"}} 
-                            src="https://bandcamp.com/EmbeddedPlayer/album=3480594853/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/abstracciones-de-puerto-rico-para-cuarteto-de-cuerdas">Abstracciones de Puerto Rico para Cuarteto de Cuerdas by Roy F Guzmán</a></iframe>         
-                          <iframe  style={{
-      display: "inline-block",
-
-      position: "relative",
-      border: 0, 
-      width: "300px", 
-      height: "420px", 
-      marginTop: "0%",
-      marginLeft:  "0%"}} 
-      src="https://bandcamp.com/EmbeddedPlayer/album=1768060898/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/x-05-x-08-x-2005-265">x = 0.5+x*(-0.8)*(x/[2.005..2.65]) by Roy F Guzmán</a></iframe>      
-
-   
-    <iframe  style={{
-      display: "inline-block",
-
-      position: "relative",
-      border: 0, 
-      width: "300px", 
-      height: "420px", 
-      marginTop: "0%",
-      marginLeft:  "0%"}} 
-      src="https://bandcamp.com/EmbeddedPlayer/album=4291500311/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/axiom-tica-j-bara-para-cuarteto-de-cuerdas">Axiomática Jíbara para Cuarteto de Cuerdas by Roy F Guzmán</a></iframe>    
-   
-   <iframe style={{
-      display: "inline-block",
-
-     position: "relative",
-     border: 0, 
-     width: "300px", 
-      height: "420px", 
-     marginTop: "0%",
-     marginLeft:  "0%"}} 
-     src="https://bandcamp.com/EmbeddedPlayer/album=1983507765/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/congas">congas by Roy F Guzmán</a></iframe>      
-    
-    <iframe style={{
-      display: "inline-block",
-
-     position: "relative",
-     border: 0, 
-     width: "300px", 
-      height: "420px", 
-     marginTop: "0%",
-     marginLeft:  "0%"}} 
-      src="https://bandcamp.com/EmbeddedPlayer/album=2664903003/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/tito-2">Tito by Roy F Guzman</a></iframe>
-   
-    <iframe style={{
-      display: "inline-block",
-
-     position: "relative",
-      border: 0, 
-      width: "300px", 
-      height: "420px",  
-      marginTop: "0%",
-      marginLeft:  "0%"}} 
-      src="https://bandcamp.com/EmbeddedPlayer/album=836594118/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/sin-t-tulo-25-12-20-1">sin-título[25-12-20][1] by Roy F Guzmán</a></iframe> 
-                  
-      <iframe style={{
-      display: "inline-block",
-      position: "relative",
-      border: 0, 
-      width: "300px", 
-      height: "420px",  
-      marginTop: "0%",
-      marginLeft:  "0%"}} 
-      src="https://bandcamp.com/EmbeddedPlayer/album=988926118/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/escardillos-para-trompeta">Escardillos Para Trompeta by Roy F Guzmán</a></iframe>               
-
-      <iframe style={{
-      display: "inline-block",
-      position: "relative",
-      border: 0, 
-      width: "300px", 
-      height: "420px",  
-      marginTop: "0%",
-      marginLeft:  "0%"}} 
-      src="https://bandcamp.com/EmbeddedPlayer/album=802527053/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/01-06-21-improvisaciones-con-acorde-n">[01-06-21] Improvisaciones con Acordeón by Roy F Guzmán</a></iframe>                    
-      <iframe style={{
-      display: "inline-block",
-      position: "relative",
-      border: 0, 
-      width: "300px", 
-      height: "420px",  
-      marginTop: "0%",
-      marginLeft:  "0%"}}  
-      src="https://bandcamp.com/EmbeddedPlayer/album=2829187536/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://royguzman.bandcamp.com/album/folclor-abstracto-i">Folclor Abstracto I by Roy F Guzmán</a></iframe>                      
       </GridItem>      
       </GridContainer>
         )
@@ -330,85 +147,20 @@ export default function ProfilePage1(props) {
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work3}
-                              className={navImageClasses}
-                            />
-                         
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
+                          
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
 
-                            <img
-                              alt="..."
-                              src={work5}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work6}
-                              className={navImageClasses}
-                            />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
 
-                            <img
-                              alt="..."
-                              src={work7}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work8}
-                              className={navImageClasses}
-                            />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
 
 
-                            <img
-                              alt="..."
-                              src={work9}
-                              className={navImageClasses}
-                            />
-                         
-                            <img
-                              alt="..."
-                              src={work10}
-                              className={navImageClasses}
-                            />
-                            </GridItem>
-                            <GridItem xs={12} sm={12} md={4}>
-
-
-                            
-                            <img
-                              alt="..."
-                              src={work12}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work13}
-                              className={navImageClasses}
-                            />
                           </GridItem>
                          
                         </GridContainer>
@@ -419,33 +171,10 @@ export default function ProfilePage1(props) {
                       tabContent: (
                         <GridContainer justify="center">
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work4}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio3}
-                              className={navImageClasses}
-                            />
+                          
                           </GridItem>
                           <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src={work2}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={work1}
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src={studio1}
-                              className={navImageClasses}
-                            />
+                         
                           </GridItem>
                         </GridContainer>
                       )
@@ -453,10 +182,7 @@ export default function ProfilePage1(props) {
                   ]}
                 />
               </GridItem>
-            </GridContainer>
+            </GridContainer> */}
             </div>
-            */}
-            
-    </div>
   );
 }
