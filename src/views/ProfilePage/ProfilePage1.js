@@ -68,7 +68,7 @@ export default function ProfilePage1(props) {
     <div style={{ 
       position: "absolute",
       backgroundImage: `url(${image3})`,
-      height: "2500px",
+      height: "2300px",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       width: "100%",
@@ -90,8 +90,9 @@ export default function ProfilePage1(props) {
         <div>  {/* <div style = {{border: "black", borderWidth: "3px", borderStyle: "outset",backgroundColor: "white", width: "75%", marginLeft: "12.5%", marginTop: "15%"}}> */}
       <div style={{ 
       position: "relative",
-      backgroundImage: `url(${image3})`,
-      height: "2000px",
+      backgroundColor: "white",
+      // backgroundImage: `url(${image3})`,
+      height: "2300px",
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       width: "100%",
@@ -108,19 +109,21 @@ export default function ProfilePage1(props) {
                   </div>
                   <div >
                     <h3 style={{color: "black", marginLeft:  "2%", marginTop: "2%", dislay: "block", position: "relative", fontFamily: 'Menlo', fontSize: "30px", fontWeight: "600", width:"50%", backgroundColor: "white"}}>Roy F Guzmán</h3>
+                    <div style ={{marginLeft: "2%"}}>
                     <Button styles = {{ marginLeft:  "2%"}} >
-                      <i style = {{color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"} />
+                      <i style = {{display: "block", color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"} />
                     </Button>
                     <Button >
-                      <i style = {{color: "black"}} className={"fab fa-instagram"} />
+                      <i style = {{display: "block", color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"} className={"fab fa-instagram"} />
                     </Button>
                     <Button >
-                      <i style = {{color: "black"}} className={"fab fa-facebook"} />
+                      <i style = {{display: "block", color: "black",marginLeft:  "5%"}} className={"fab fa-twitter"}  className={"fab fa-facebook"} />
                     </Button>
+                    </div>
                   </div>
                 </div>
               </GridItem>
-            </GridContainer>  
+            </GridContainer>  <br></br>
             <div>
               <p style={{color: "black", marginLeft:  "2%", dislay: "block", position: "relative", fontFamily: 'Menlo', fontSize: "15px", fontWeight: "600", width:"75%", backgroundColor: "white"}}>
               {"Roy F Guzmán - Compositor de música electrónica algorítmica e instrumental, improvisador y poeta nacido en San Juan, Puerto Rico el 28 de junio de 1987."} <br></br><br></br>
