@@ -68,7 +68,7 @@ function Releases(props) {
       width: "69%",
       padding: "10px",
        }}> 
-       Articulos<br></br></h5>
+       Artículos<br></br></h5>
       </div> 
         <ul style = {{width: "75%"}} >
           <li>
