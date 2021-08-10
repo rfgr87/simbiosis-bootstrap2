@@ -10,6 +10,8 @@ import Components from "views/Components/Components.js";
 import Manifesto from "views/Manifesto/Manifesto.js";
 import Medios from "views/Medios/Medios.js";
 import Articulos from "views/Releases/Articulos.js";
+import Academia from "views/Academia/Academia.js";
+
 import LandingPage from "views/LandingPage/LandingPage.js";
 import ProfilePage1 from "views/ProfilePage/ProfilePage1.js";
 import ProfilePage2 from "views/ProfilePage/ProfilePage2.js";
@@ -45,6 +47,8 @@ ReactDOM.render(
       <Route path='/julioquinones' component={ProfilePage9}/>
       <Route path='/emmanuelsegarra' component={ProfilePage10}/>
       <Route path="/login-page" component={LoginPage} />
+      <Route path="/academiasimbiosis" component={Academia} />
+
       <Route path="/" component={Components}/>
     </Switch>
   </Router>,

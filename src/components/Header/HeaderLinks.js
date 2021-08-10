@@ -86,6 +86,11 @@ export default function HeaderLinks(props) {
               Medios
         </Link>
       </ListItem>
+      <ListItem className={classes.listItem}>
+      <Link to="/academiasimbiosis" className={classes.navLink}>
+              Academia Simbiosis
+        </Link>
+      </ListItem>
 
       <ListItem className={classes.listItem}>
       <Link to="/articulos" className={classes.navLink}>

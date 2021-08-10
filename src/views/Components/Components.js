@@ -27,7 +27,8 @@ import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
-import image1 from "assets/img/simbiosis-fotos/foto-simbiosis1.jpg";
+import Image from 'react-bootstrap/Image'
+import image1 from "assets/img/simbiosis-fotos/SimbiosisLogo.jpg";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import styles1 from "assets/jss/material-kit-react/views/profilePage.js";
