@@ -77,7 +77,7 @@ function Academia(props) {
       marginTop: "100px",
       width: "69%",
       padding: "10px",
-       }}> 
+       }}><p>Teléfono 939-207-6051</p> 
        <br></br></h5>
       </div> 
       <GridContainer>

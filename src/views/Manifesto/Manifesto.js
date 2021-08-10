@@ -1,5 +1,6 @@
 import React from 'react'
-import image1 from "assets/img/decolonial-fotos/foto-roy-pieza-roy1.jpg";
+import image1 from "assets/img/simbiosis-fotos/AcademiaSimbiosis1.jpg";
+
 import MainFeaturedPost from "views/Manifesto/MainFeaturedPost.js";
 
 
